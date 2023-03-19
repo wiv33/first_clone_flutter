@@ -1,3 +1,4 @@
+import 'package:first_clone_flutter/screen/home_screen.dart';
 import 'package:first_clone_flutter/widget/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -23,15 +24,13 @@ class _MyAppState extends State<MyApp> {
           brightness: Brightness.dark,
           primaryColor: Colors.black,
           accentColor: Colors.white),
-      home: const DefaultTabController(
+      home: DefaultTabController(
         length: 4,
         child: Scaffold(
           body: TabBarView(
             physics: NeverScrollableScrollPhysics(),
             children: <Widget>[
-              Center(
-                child: Text('home'),
-              ),
+              HomeScreen(),
               Center(
                 child: Text('search'),
               ),
